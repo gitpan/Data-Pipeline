@@ -4,6 +4,8 @@ use lib '../lib';
 
 package My::Machine;
 
+use Moose;
+extends 'Data::Pipeline::Machine';
 use Data::Pipeline::Machine;
 
 use Data::Pipeline qw( FetchPage CSV UrlBuilder Rename Regex Filter );
